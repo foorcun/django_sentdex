@@ -1,0 +1,2014 @@
+
+<!-- saved from url=(0070)https://pythonprogramming.net/design-bootstrap-django-python-tutorial/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<!-- 
+		palette:
+		dark blue: #003F72
+		yellow: #FFD166
+		salmon: #EF476F
+		offwhite: #e7d7d7
+		Light Blue: #118AB2
+		Light green: #7DDF64
+		-->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Python Programming Tutorials</title>
+
+		<meta name="description" content="Python Programming tutorials from beginner to advanced on a massive variety of topics. All video and text tutorials are free.">
+
+		<link rel="shortcut icon" href="https://pythonprogramming.net/static/favicon.ico">
+		<link rel="stylesheet" href="./burdan copy paste yapıyo_files/materialize.min.css">
+        <link href="./burdan copy paste yapıyo_files/icon" rel="stylesheet">
+        <meta name="google-site-verification" content="3fLok05gk5gGtWd_VSXbSSSH27F2kr1QqcxYz9vYq2k">
+        <link rel="stylesheet" type="text/css" href="./burdan copy paste yapıyo_files/bootstrap.css">
+
+		
+		  <!-- Compiled and minified CSS -->
+
+		<!-- Compiled and minified JavaScript -->
+
+		<script async="" src="./burdan copy paste yapıyo_files/analytics.js.indir"></script><script src="./burdan copy paste yapıyo_files/jquery-2.1.4.min.js.indir"></script>
+		<script src="./burdan copy paste yapıyo_files/materialize.min.js.indir"></script>
+
+		
+
+        <style>
+		@media (min-width:992px) {
+		#aside {
+			width:250px;
+		}
+		pre { tab-size: 4;}
+		.btn {background-color:#FFD166;
+			  color:#000;
+		      height:auto;
+			  font-color:#000;
+			  }
+		.btn:hover {background-color:#FFD166;
+					}
+
+
+		</style>
+				
+		<!-- Google Tracking -->
+		<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-51891827-1', 'auto');
+			  ga('send', 'pageview');
+
+		</script>
+
+
+
+	
+	<link rel="stylesheet" type="text/css" href="./burdan copy paste yapıyo_files/prettify.css"></head>
+	
+	<body class="body">
+
+		<div class="navbar-fixed">
+			<nav style="background-color:#003F72">
+				<div class="nav-wrapper container">
+					<a href="https://pythonprogramming.net/" class="brand-logo"><img class="img-responsive" style="width:50px; height;50px; margin-top:5px" src="./burdan copy paste yapıyo_files/mainlogowhitethick.jpg"></a>
+					<a href="https://pythonprogramming.net/design-bootstrap-django-python-tutorial/#" data-activates="navsidebar" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+					<ul class="right hide-on-med-and-down">
+					<li><i class="material-icons">search</i></li>
+					<li>
+						<form method="get" id="searchform" style="height:50px; padding-top:10px" action="https://pythonprogramming.net/search/?l=hi">
+							<input name="q" id="search" type="search" placeholder="search" style="font-size:16px">
+						</form>
+					</li>
+						
+			<li><a href="https://pythonprogramming.net/">Home</a></li>
+			<li><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="sudo apt-get upgrade" href="https://pythonprogramming.net/+=1/" data-tooltip-id="bb2337c1-af73-b4b4-4b04-8d0172c14d71">+=1</a></li>
+			<li><a href="https://pythonprogramming.net/store/python-hoodie/">Store</a></li>
+			
+			<li><a href="https://pythonprogramming.net/community/">Community</a></li>
+				<li><a href="https://pythonprogramming.net/login/">Log in</a></li>
+                <li><a href="https://pythonprogramming.net/register/">Sign up</a></li>
+			
+
+					</ul>
+					<ul class="side-nav" id="navsidebar" style="left: -250px;">
+					<li>
+						<form method="get" id="searchform" style="height:50px; padding-top:10px" action="https://pythonprogramming.net/search/?l=hi">
+							<input name="q" id="search" type="search" placeholder="search" style="font-size:16px">
+						</form>
+					</li>
+						
+			<li><a href="https://pythonprogramming.net/">Home</a></li>
+			<li><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="sudo apt-get upgrade" href="https://pythonprogramming.net/+=1/" data-tooltip-id="8a6f995a-ceaa-7390-a306-5965fc104679">+=1</a></li>
+			<li><a href="https://pythonprogramming.net/store/python-hoodie/">Store</a></li>
+			
+			<li><a href="https://pythonprogramming.net/community/">Community</a></li>
+				<li><a href="https://pythonprogramming.net/login/">Log in</a></li>
+                <li><a href="https://pythonprogramming.net/register/">Sign up</a></li>
+			
+
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+		<!-- main content -->
+		<div class="container" style="max-width:1500px; min-height:100%">
+					
+					
+					  
+					
+				
+					
+<!--       <pre class="prettyprint">              width="750" height="423"    -->
+
+    <div class="row">
+    <div class="col l8 m12 s12">
+
+
+      <div class="container-fluid" align="left">
+		
+
+	
+	<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- PythonProgramming Responsive -->
+						<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1579050400541873" data-ad-slot="9483252723" data-ad-format="auto"></ins>
+						<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+	 <br>
+	
+	
+
+
+
+		<br>
+		<!--<div class="progress" style="background-color:#ffebbe;height:20px;">
+			<div class="determinate" style="background-color:#FFD166;width: 0%;">
+				Django Web Development with Python Progress:  0%
+			</div>
+		</div>-->
+		<h2>Design with HTML/CSS - Django Web Development Tutorial</h2>
+		<br>
+	  
+		<div class="video-container"><iframe width="560" height="315" src="./burdan copy paste yapıyo_files/p8qpu9WscFU.html" frameborder="0" allowfullscreen=""></iframe></div><br>
+		
+
+	
+	<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- PythonProgramming Responsive -->
+						<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1579050400541873" data-ad-slot="9483252723" data-ad-format="auto"></ins>
+						<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+	 <br>
+	
+	
+
+
+		<br>
+	  
+<p>Hello and welcome to the fourth Django web development with Python tutorial. In this tutorial, we're going to spice up our home page a bit. Currently, our hompage is something like:</p>
+
+<img class="responsive-img" src="./burdan copy paste yapıyo_files/django-tutorial-basic.png">
+
+<p>Not bad, but we can do better. We're going to use Bootstrap, which is a popular HTML/CSS and some javascript package that greatly helps people who are design deficient. Bootstrap isn't going to fix you entirely, but it can at least lend a helping hand. This website is built on Bootstrap, and my other websites, like <a href="https://sentdex.com/" target="blank"><strong>Sentdex.com</strong></a>, are too. Head to <a href="https://getbootstrap.com/getting-started/#download" target="blank"><strong>Bootstrap's website</strong></a> and download it. Find and note to yourself the Bootstrap CDN (content delivery network). I am going to show you using Bootstrap locally so you can also learn about referencing static files. Later, you may choose to use the CDN instead, as a CDN can deliver data at a faster speed than your server, due to being in multiple locations and serving from the location closest to your end-user.</p>
+
+<p>Once downloaded, extract to the dist folder, open that, possibly another, and then find the <code>css</code>, <code>fonts</code>, and <code>js</code> directories. Head to <code>mysite/personal</code>, making a new directory called <code>static</code>, and then another called <code>personal within that one</code>, and place the Bootstrap directories there. The path should be <code>mysite\personal\static\personal</code>, starting from the root mysite. You could get away with putting these in any of the apps you have installed. Since the personal site is the "main app," I am choosing to put these files here. The CSS will dictate a lot about what your site looks like, so the most integral app should be the host.</p>
+
+<p>At least for me, it is already there, but now that you have static files, you will want to make sure there is a setting for them in your <code>mysite/settings.py</code> file:</p>
+
+<pre class="prettyprint lang-py prettyprinted"><span class="pln">STATIC_URL </span><span class="pun">=</span><span class="pln"> </span><span class="str">'/static/'</span></pre>
+
+<p>It is at the very bottom in my case.</p>
+
+<p>This just simply looks for static files to be in the static directories of installed apps, much like Django already knows to look for templates in the template directories. Now head to your <code>personal/templates/personal/header.html</code> template. We're going to call our new CSS file into action.</p>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+	&lt;title&gt;Harrison Kinsley&lt;/title&gt;
+	&lt;meta charset="utf-8" /&gt;
+	{% load staticfiles %}
+	&lt;link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type = "text/css"/&gt;
+&lt;/head&gt;
+
+&lt;body class="body" style="background-color:#f6f6f6"&gt;
+	&lt;div&gt;
+	   {% block content %}
+	   {% endblock %}	
+	&lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</pre>
+
+<p>The new addition here:</p>
+
+<pre>	{% load staticfiles %}
+	&lt;link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/&gt;</pre>
+
+<p>We use the load staticfiles command to load in all available static files. Next, we specifiy the path to the one we want in this case to reference for our stylesheet. The static directories start with <code>/static/</code> and then we need to specify the rest of the way. For us, the rest of the way to the <code>bootstrap.min.css</code> file is <code>personal/css/bootstrap.min.css</code>. It is important to note here that we can use this identical reference from any other app, Django is going to look in all /static/ directories in any installed apps for this path. Alright, great, go ahead and do: <code>python manage.py runserver</code>, refresh your homepage, and you should at least notice the font is slightly different.</p>
+
+<img class="responsive-img" src="./burdan copy paste yapıyo_files/django-with-bootstrap-intro.png">
+
+<p>Not winning any awards for this website yet, but let's try to improve it a bit. The main file we want to focus on, at least for now, for the general look and feel of our website is <code>mysite/personal/templates/personal/header.html</code>. Open that back up, and place in there something like:</p>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+	&lt;title&gt;Harrison Kinsley&lt;/title&gt;
+	&lt;meta charset="utf-8" /&gt;
+	{% load staticfiles %}
+	&lt;link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/&gt;
+	&lt;meta name="viewport" content = "width=device-width, initial-scale=1.0"&gt;
+	
+	&lt;style type="text/css"&gt;
+		html,
+		body {
+		  height:100%
+		}
+	&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body class="body" style="background-color:#f6f6f6"&gt;
+	&lt;div class="container-fluid" style="min-height:95%; "&gt;
+		&lt;div class="row"&gt;
+			  &lt;div class="col-sm-2"&gt;
+				  &lt;br&gt;
+				  &lt;center&gt;
+					&lt;img src="{% static 'personal/img/profile.jpg' %}" class="responsive-img" style='max-height:100px;' alt="face"&gt;
+				  &lt;/center&gt;
+			  &lt;/div&gt;
+			  &lt;div class="col-sm-10"&gt;
+				  &lt;br&gt;
+				  &lt;center&gt;
+				  &lt;h3&gt;Programming, Teaching, Entrepreneurship&lt;/h3&gt;
+				  &lt;/center&gt;
+			  &lt;/div&gt;
+		&lt;/div&gt;&lt;hr&gt;
+
+		&lt;div class="row"&gt;
+		  &lt;div class="col-sm-2"&gt;
+		  &lt;br&gt;
+
+		  &lt;br&gt;
+		   &lt;!-- Great, til you resize. --&gt;
+			&lt;!--&lt;div class="well bs-sidebar affix" id="sidebar" style="background-color:#fff"&gt;--&gt;
+			&lt;div class="well bs-sidebar" id="sidebar" style="background-color:#fff"&gt;
+			  &lt;ul class="nav nav-pills nav-stacked"&gt;
+				&lt;li&gt;&lt;a href='/'&gt;Home&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href='/blog/'&gt;Blog&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href='/contact/'&gt;Contact&lt;/a&gt;&lt;/li&gt;
+			  &lt;/ul&gt;
+			&lt;/div&gt; &lt;!--well bs-sidebar affix--&gt;
+		  &lt;/div&gt; &lt;!--col-sm-2--&gt;
+		  &lt;div class="col-sm-10"&gt;
+		  
+			&lt;div class='container-fluid'&gt;
+			&lt;br&gt;&lt;br&gt;
+			   {% block content %}
+			   {% endblock %}	
+			&lt;/div&gt;
+		  &lt;/div&gt;
+		&lt;/div&gt; 
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;div class="container-fluid" style='margin-left:15px'&gt;
+			&lt;p&gt;&lt;a href="#" target="blank"&gt;Contact&lt;/a&gt; | &lt;a href="#" target="blank"&gt;LinkedIn&lt;/a&gt; | &lt;a href="#" target="blank"&gt;Twitter&lt;/a&gt; | &lt;a href="#" target="blank"&gt;Google+&lt;/a&gt;&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/footer&gt;	
+	
+&lt;/body&gt;
+
+&lt;/html&gt;</pre>
+
+
+<p>Okay, so that's quite the change from before! Let's break it down a bit:</p>
+<pre>&lt;head&gt;
+	&lt;title&gt;Harrison Kinsley&lt;/title&gt;
+	&lt;meta charset="utf-8" /&gt;
+	{% load staticfiles %}
+	&lt;link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/&gt;
+	&lt;meta name="viewport" content = "width=device-width, initial-scale=1.0"&gt;
+	
+	&lt;style type="text/css"&gt;
+		html,
+		body {
+		  height:100%
+		}
+	&lt;/style&gt;
+&lt;/head&gt;</pre>
+
+<p>The head just contains some meta info for the most part. The only change from before is the inclusion of some more CSS. This CSS just sets it to be the case that our html and body elements will take up 100% of the website. We also added <code>&lt;meta name="viewport" content = "width=device-width, initial-scale=1.0"&gt;</code>, which is mainly a suggestion by Bootstrap. Next, we begin defining a div in the body tag as a container with the minimum height of 95% of the page. We do this because we may have times when the page is longer than 100% of the page (hence needing a scrollbar), but we also don't want our footer up at the top of the page. Next, we're using these "row" elements. This is Bootstrap. So are our container-fluid divs. For the row elements, check out: <a href="https://getbootstrap.com/css/#grid-example-basic" target="blank"><strong>Bootstrap Grids</strong></a>. Next, we're using a <a href="https://getbootstrap.com/components/#nav" target="blank"><strong>Bootstrap Nav</strong></a> within a combination of a <a href="https://getbootstrap.com/components/#wells" target="blank"><strong>well</strong></a> and sidebar. I included an example of an affixed sidebar, where you can scroll and the sidebar stays in place. You can comment out the way we build the div, uncomment that one, and see for yourself. The problem comes up when you go to resize the page to something more like a cell-phone size.</p>
+
+<p>One of the great things about Bootstrap is it is very responsive, which is something you would normally have to code in. That said, things can still go wrong, and you should always test your code on a variety of device sizes. If you want the sidebar to be affixed, check out something like this <a href="https://getbootstrap.com/examples/dashboard/" target="blank"><strong>sidebar example</strong></a>.</p>
+
+<p>My best suggestion is to spend some time reading through the Bootstrap documentation. Before I start a project, I usually just pull up the documentation, open each of the main categories (CSS, JavaScript, and Components), and scroll through them. I don't read every word, I just get a refresher regarding what is available. Bootstrap also hosts quite a few examples of entire pages for design examples and ideas.</p>
+
+<p>Back to our current template, there is one more thing needed that you probably don't have. This template calls for a <code>profile.jpg</code> image with the line <code>&lt;img src="{% static 'personal/img/profile.jpg' %}" class="responsive-img" style='max-height:100px;' alt="face"&gt;</code>. You will want to get an image of yourself, maybe a Python logo, or something else to put here. You can also just not have a picture at all and don't put anything.</p>
+
+<p>The result should be something like:</p>
+
+<img class="responsive-img" src="./burdan copy paste yapıyo_files/django-html-css-bootstrap-basics.png">
+
+<p>We can also squish the screen a bit to be more like a vertical cell phone, and we will see our nav moves to the top, like:</p>
+
+<img class="responsive-img" src="./burdan copy paste yapıyo_files/django-bootstrap-responsive-website.png">
+
+<p>Okay, so we are still not winning any awards for our design, but this is better than before. I highly encourage you to continue working on your header to continue improving it. Since this is a Django tutorial, we're going to leave it as it is and move on. In the next tutorial, we're going to create our contact page, creating it as a generic page and passing the data for the block body as a variable from Python to the HTML template.</p>
+<p>Download the entire site's code for this tutorial here: <a href="https://pythonprogramming.net/static/downloads/django/part4.zip" target="blank"><strong>Part 4</strong></a></p>
+        
+
+		
+
+		
+		
+
+
+                
+		<p>The next tutorial: <a title="Jinja Variables - Django Web Development Tutorial" href="https://pythonprogramming.net/jinja-variables-django-python-tutorial/?completed=/design-bootstrap-django-python-tutorial/"><button class="btn" style="background-color:#FFD166; color:#000000">Jinja Variables - Django Web Development Tutorial</button></a></p>
+
+		
+
+	
+	<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- PythonProgramming Responsive -->
+						<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1579050400541873" data-ad-slot="9483252723" data-ad-format="auto"></ins>
+						<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+	 <br>
+	
+	
+
+<br>
+	  </div>
+	  
+	  
+	  
+
+	
+
+	
+
+</div>
+<div class="col l4 m12 s12">
+<br><br><br>
+
+  <ul class="collapsible popout" data-collapsible="accordion" style="font-size:85%; padding-left:50px">
+
+
+  		<!-- Custom ad: -->
+
+	    
+	    	
+        <a href="https://pythonprogramming.net/+=1/?a=6&amp;t=/design-bootstrap-django-python-tutorial/" id="process_click">
+          <div class="card hoverable" style="max-width:400px; align-items: left;">
+            <div class="card-image">
+              <img id="process_click" class="responsive-img" src="https://pythonprogramming.net/static/images/ads/plus-equals-1-v4.png" style="display: none !important;">
+            </div>
+          </div>
+        </a>
+        
+		
+
+  		<!--HONLY -->
+  		
+  	    
+		
+
+
+	
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+
+				     
+						 
+							
+								<li>
+								  <div class="collapsible-header">Django Web Development with Python Introduction</div>
+								  <div class="collapsible-body" style="">
+										<p><a href="https://pythonprogramming.net/django-web-development-with-python-intro/"><button class="btn waves-effect waves-light right-align" style="background-color:#FFD166; color:#000000">Go
+									  </button></a></p>						
+								  </div>
+								</li>  
+							
+						 
+							
+								<li>
+								  <div class="collapsible-header">First Website - Django Web Development Tutorial</div>
+								  <div class="collapsible-body" style="">
+										<p><a href="https://pythonprogramming.net/first-site-django-python-tutorial/"><button class="btn waves-effect waves-light right-align" style="background-color:#FFD166; color:#000000">Go
+									  </button></a></p>						
+								  </div>
+								</li>  
+							
+						 
+							
+								<li>
+								  <div class="collapsible-header">Jinja Templates - Django Web Development Tutorial</div>
+								  <div class="collapsible-body" style="">
+										<p><a href="https://pythonprogramming.net/jinja-templates-django-python-tutorial/"><button class="btn waves-effect waves-light right-align" style="background-color:#FFD166; color:#000000">Go
+									  </button></a></p>						
+								  </div>
+								</li>  
+							
+						 
+							
+							    <li class="active">
+								  <div class="collapsible-header active" style="padding:2px">Design with HTML/CSS - Django Web Development Tutorial</div>
+								  <div class="collapsible-body" style="display: block; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">You are currently here.</div>
+								</li>  
+							
+						 
+							
+								<li>
+								  <div class="collapsible-header">Jinja Variables - Django Web Development Tutorial</div>
+								  <div class="collapsible-body" style="">
+										<p><a href="https://pythonprogramming.net/jinja-variables-django-python-tutorial/"><button class="btn waves-effect waves-light right-align" style="background-color:#FFD166; color:#000000">Go
+									  </button></a></p>						
+								  </div>
+								</li>  
+							
+						 
+							
+								<li>
+								  <div class="collapsible-header">Beginning a Blog - Django Web Development Tutorial</div>
+								  <div class="collapsible-body" style="">
+										<p><a href="https://pythonprogramming.net/blog-django-python-tutorial/"><button class="btn waves-effect waves-light right-align" style="background-color:#FFD166; color:#000000">Go
+									  </button></a></p>						
+								  </div>
+								</li>  
+							
+						 
+							
+								<li>
+								  <div class="collapsible-header">Views and Templates - Django Web Development Tutorial</div>
+								  <div class="collapsible-body" style="">
+										<p><a href="https://pythonprogramming.net/views-templates-django-python-tutorial/"><button class="btn waves-effect waves-light right-align" style="background-color:#FFD166; color:#000000">Go
+									  </button></a></p>						
+								  </div>
+								</li>  
+							
+						 
+							
+								<li>
+								  <div class="collapsible-header">Database migrations - Django Web Development Tutorial</div>
+								  <div class="collapsible-body" style="">
+										<p><a href="https://pythonprogramming.net/database-migration-django-python-tutorial/"><button class="btn waves-effect waves-light right-align" style="background-color:#FFD166; color:#000000">Go
+									  </button></a></p>						
+								  </div>
+								</li>  
+							
+						 
+							
+								<li>
+								  <div class="collapsible-header">Admin control panel - Django Web Development Tutorial</div>
+								  <div class="collapsible-body" style="">
+										<p><a href="https://pythonprogramming.net/admin-django-python-tutorial/"><button class="btn waves-effect waves-light right-align" style="background-color:#FFD166; color:#000000">Go
+									  </button></a></p>						
+								  </div>
+								</li>  
+							
+						 
+							
+								<li>
+								  <div class="collapsible-header">Finishing blog - Django Web Development Tutorial</div>
+								  <div class="collapsible-body" style="">
+										<p><a href="https://pythonprogramming.net/finished-blog-django-python-tutorial/"><button class="btn waves-effect waves-light right-align" style="background-color:#FFD166; color:#000000">Go
+									  </button></a></p>						
+								  </div>
+								</li>  
+							
+						 
+							
+								<li>
+								  <div class="collapsible-header">Publishing Django Project to a web server tutorial</div>
+								  <div class="collapsible-body" style="">
+										<p><a href="https://pythonprogramming.net/django-web-server-publish-tutorial/"><button class="btn waves-effect waves-light right-align" style="background-color:#FFD166; color:#000000">Go
+									  </button></a></p>						
+								  </div>
+								</li>  
+							
+						 
+							
+								<li>
+								  <div class="collapsible-header">Securing Django web server with SSL - HTTPS and Lets Encrpyt</div>
+								  <div class="collapsible-body" style="">
+										<p><a href="https://pythonprogramming.net/django-web-server-https-lets-encrypt-ssl/"><button class="btn waves-effect waves-light right-align" style="background-color:#FFD166; color:#000000">Go
+									  </button></a></p>						
+								  </div>
+								</li>  
+							
+						 
+					  
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+				  
+			   
+			
+
+  </ul>
+
+
+</div>
+</div>	
+	
+	
+	
+
+	
+
+
+
+
+
+			</div>
+		
+
+		<!--login modal-->
+		
+<div id="modalLogin" class="modal">
+			<div class="modal-content">
+				<h2 class="center-align">Login</h2>
+				<div class="center-align">
+					<div class="divider"></div>
+					
+					<form class="col s12">
+						<div class="row center-align">
+							<div class="input-field col m10">
+								<input id="icon_prefix" type="text" class="validate">
+								<label for="icon_prefix">Username</label>
+							</div>
+							<div class="input-field col m10">
+								<input id="icon_password" type="password" class="validate">
+								<label for="icon_password">Password</label>
+							</div>
+						</div>
+					</form>
+					
+					
+					<div class="divider"></div>
+					<p>
+						<a href="https://pythonprogramming.net/design-bootstrap-django-python-tutorial/#" class="btn btn-flat white modal-close">Cancel</a> &nbsp;
+						<a href="https://pythonprogramming.net/design-bootstrap-django-python-tutorial/#" class="waves-effect waves-blue blue btn btn-flat modal-action modal-close">Login</a>
+					</p>
+					
+					
+				</div>
+			</div>
+		</div>
+
+
+		
+		<!--Register modal-->
+		
+		<div id="modalRegister" class="modal">
+			<div class="modal-content">
+				<h2 class="center-align">Sign up</h2>
+				<div class="center-align">
+					<div class="divider"></div>
+					
+					<form action="https://pythonprogramming.net/register/" method="post">
+							<div class="input-field col">
+								<input id="username" type="text" class="validate">
+								<label for="username">Username</label>
+							</div>
+							<div class="input-field col">
+								<input id="password" type="password" class="validate">
+								<label for="password">Password</label>
+							</div>
+							<div class="input-field col">
+								<input id="confirm" type="password" class="validate">
+								<label for="confirm">Repeat Password</label>
+							</div>
+							
+							<div class="input-field col">
+								<input id="email" type="text" class="validate">
+								<label for="email">Email</label>
+							</div>
+
+							<div class="divider"></div>
+							<p>
+								<a href="https://pythonprogramming.net/design-bootstrap-django-python-tutorial/#" class="btn btn-flat white modal-close">Cancel</a> &nbsp;
+								<button class="btn" type="submit" value="Register">Sign Up</button>
+							</p>
+
+					</form>
+
+					
+
+				</div>
+			</div>
+		</div>
+
+
+
+		
+		<script>
+			$(document).ready(function(){
+				$(".button-collapse").sideNav();
+				$('.modal-trigger').leanModal();
+				$('.collapsible').collapsible({
+				  accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+				});
+				$('#aside').pushpin({ top:110, bottom:500 });
+		  });
+		</script>
+		<script>
+		  $(document).ready(function(){
+			$('.collapsible').collapsible({
+			  accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+			});
+			$('select').material_select();
+		  });
+	  </script>
+	  <script>
+		function goBack() {
+			window.history.back()
+		}
+	</script>
+		
+	  
+	
+
+<footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">You've reached the end!</h5>
+                
+                <p class="grey-text text-lighten-4">Contact: Harrison@pythonprogramming.net.</p>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="https://pythonprogramming.net/support-donate/">Support this Website!</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://pythonprogramming.net/consulting/">Hire me</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/pythonprogramming.net/">Facebook</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://twitter.com/sentdex">Twitter</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://plus.google.com/+sentdex">Google+</a></li>
+                </ul>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h6 class="white-text">Legal stuff:</h6>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="https://pythonprogramming.net/about/tos/">Terms and Conditions</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://pythonprogramming.net/about/privacy-policy/">Privacy Policy</a></li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <a href="https://xkcd.com/353/" target="blank"><p class="grey-text right" style="padding-right:10px">Programming is a superpower.</p></a>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2016 PythonProgramming.net
+            
+            </div>
+
+          </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="material-tooltip" id="bb2337c1-af73-b4b4-4b04-8d0172c14d71"><span>sudo apt-get upgrade</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="8a6f995a-ceaa-7390-a306-5965fc104679"><span>sudo apt-get upgrade</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="hiddendiv common"></div><div class="drag-target" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div></body></html>
